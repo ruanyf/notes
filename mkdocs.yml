@@ -1,0 +1,50 @@
+site_name: 个人笔记
+site_url: https://notes.wangdoc.com
+
+plugins:
+  - literate-nav:
+      nav_file: nav.md
+
+theme:
+  name: material
+
+  icon:
+    logo: fontawesome/solid/w
+
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+
+  palette:
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: grey
+      accent: deep orange
+
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: grey
+      accent: deep purple
+
+  features:
+    - navigation.footer
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
