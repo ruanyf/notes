@@ -8,9 +8,6 @@ plugins:
 theme:
   name: material
 
-  icon:
-    logo: fontawesome/solid/w
-
   font:
     text: Merriweather Sans
     code: Red Hat Mono
