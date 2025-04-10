@@ -4,6 +4,7 @@ site_url: https://notes.wangdoc.com
 plugins:
   - literate-nav:
       nav_file: nav.md
+      tab_length: 2
 
 theme:
   name: material
