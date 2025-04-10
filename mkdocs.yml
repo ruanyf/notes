@@ -12,6 +12,9 @@ theme:
     text: Merriweather Sans
     code: Red Hat Mono
 
+  icon:
+    logo: material/library
+
   palette:
     # Light Mode
     - scheme: default
