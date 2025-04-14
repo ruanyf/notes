@@ -153,10 +153,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "510c5697df8292c1",
+  "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
+    "().md",
+    "docs/nav.md",
+    "docs/读书/李飞飞自传.md",
+    "docs/读书",
     "docs/中国近代史/北伐战争.md",
-    "docs/中国近代史/辛亥革命后的广西.md",
-    "docs/nav.md"
+    "docs/中国近代史/辛亥革命后的广西.md"
   ]
 }
