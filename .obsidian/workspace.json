@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/读书/未来的冲击.md",
+                "file": "docs/nav.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未来的冲击"
+              "title": "nav"
             },
             "group": "9da2b54e2380d3a6"
           }
@@ -51,13 +51,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/读书/未来的冲击.md",
+                "file": "docs/nav.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 未来的冲击"
+              "title": "Outline of nav"
             },
             "group": "9da2b54e2380d3a6"
           }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/读书/未来的冲击.md",
+                "file": "docs/nav.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 未来的冲击"
+              "title": "Backlinks for nav"
             }
           },
           {
@@ -208,15 +208,18 @@
   },
   "active": "80c67c08f767f040",
   "lastOpenFiles": [
-    "2025-04-23.md",
+    "docs/cloudflare/wrangler.md",
+    "docs/index.md",
+    "docs/cloudflare",
+    "docs/读书/施佩尔回忆录.md",
     "docs/读书/未来的冲击.md",
+    "2025-04-23.md",
     "Untitled.canvas",
     "docs/中国近代史/孙中山的国共合作.md",
     "docs/中国近代史/辛亥革命后的广西.md",
     "Makefile",
     "docs/nav.md",
     "docs/CNAME",
-    "docs/index.md",
     "中国近代史/孙中山的国共合作.md",
     "中国近代史/中国共产党的诞生.md",
     "中国近代史"
