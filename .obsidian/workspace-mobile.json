@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/读书/未来的冲击.md",
+                "file": "docs/nav.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未来的冲击"
+              "title": "nav"
             }
           }
         ]
@@ -155,9 +155,12 @@
   },
   "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
-    "docs/读书/施佩尔回忆录.md",
-    "docs/读书/未来的冲击.md",
+    "docs/index.md",
+    "docs/读书/医生回忆录.md",
     "docs/nav.md",
+    "docs/读书/未来的冲击.md",
+    "docs/读书/冷启动问题.md",
+    "docs/读书/施佩尔回忆录.md",
     "docs/读书/李飞飞自传.md",
     "().md",
     "docs/读书",

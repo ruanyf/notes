@@ -3,6 +3,7 @@
   - [李飞飞自传](读书/李飞飞自传.md)
   - [施佩尔回忆录](读书/施佩尔回忆录.md)
   - [未来的冲击](读书/未来的冲击.md)
+  - [冷启动问题](读书/冷启动问题.md)
 - Cloudflare
   - [wrangler](cloudflare/wrangler.md)
 - 中国近代史
