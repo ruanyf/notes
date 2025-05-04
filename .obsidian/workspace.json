@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/读书/冷启动问题.md",
+                "file": "docs/nav.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "冷启动问题"
+              "title": "nav"
             }
           }
         ],
@@ -222,9 +222,13 @@
   },
   "active": "32bae2297e81e796",
   "lastOpenFiles": [
+    "docs/杂类/软件.md",
+    "docs/nav.md",
+    "docs/杂类/高血压.md",
+    "docs/读书/冷启动问题.md",
+    "docs/杂类",
     "docs/读书/施佩尔回忆录.md",
     "docs/cloudflare/wrangler.md",
-    "docs/nav.md",
     "docs/index.md",
     "docs/cloudflare",
     "docs/读书/未来的冲击.md",
