@@ -6,7 +6,7 @@
       {
         "id": "c8bf5673099f0566",
         "type": "tabs",
-        "dimension": 77.29852440408627,
+        "dimension": 79.63340122199592,
         "children": [
           {
             "id": "3f61c0da98373c72",
@@ -34,8 +34,7 @@
               },
               "icon": "lucide-file",
               "title": "nav"
-            },
-            "group": "9da2b54e2380d3a6"
+            }
           },
           {
             "id": "32bae2297e81e796",
@@ -43,37 +42,52 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/反右运动.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nav"
+              "title": "反右运动"
             }
+          },
+          {
+            "id": "19785442d916ccda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/中国近代史/大跃进.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "大跃进"
+            },
+            "group": "ae777cd72465ea30"
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
-        "id": "52f940caf1f0cee8",
+        "id": "a01a25f1e7f90c6c",
         "type": "tabs",
-        "dimension": 22.701475595913735,
+        "dimension": 20.366598778004075,
         "children": [
           {
-            "id": "14afe10ddaba562c",
+            "id": "7c869fb2c08781a1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/大跃进.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of nav"
+              "title": "Outline of 大跃进"
             },
-            "group": "9da2b54e2380d3a6"
+            "group": "ae777cd72465ea30"
           }
         ]
       }
@@ -148,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/大跃进.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for nav"
+              "title": "Backlinks for 大跃进"
             }
           },
           {
@@ -220,12 +234,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "32bae2297e81e796",
+  "active": "19785442d916ccda",
   "lastOpenFiles": [
-    "docs/杂类/软件.md",
     "docs/nav.md",
-    "docs/杂类/高血压.md",
+    "docs/中国近代史/反右运动.md",
+    "docs/中国近代史/大跃进.md",
+    "docs/中国近代史/过渡时期总路线.md",
     "docs/读书/冷启动问题.md",
+    "docs/杂类/软件.md",
+    "docs/杂类/高血压.md",
     "docs/杂类",
     "docs/读书/施佩尔回忆录.md",
     "docs/cloudflare/wrangler.md",
