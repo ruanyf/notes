@@ -56,12 +56,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/中国近代史/大跃进.md",
+                "file": "docs/读书/李飞飞自传.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大跃进"
+              "title": "李飞飞自传"
             },
             "group": "ae777cd72465ea30"
           }
@@ -79,13 +79,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/中国近代史/大跃进.md",
+                "file": "docs/读书/李飞飞自传.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 大跃进"
+              "title": "Outline of 李飞飞自传"
             },
             "group": "ae777cd72465ea30"
           }
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/中国近代史/大跃进.md",
+                "file": "docs/读书/李飞飞自传.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 大跃进"
+              "title": "Backlinks for 李飞飞自传"
             }
           },
           {
@@ -236,9 +236,9 @@
   },
   "active": "19785442d916ccda",
   "lastOpenFiles": [
-    "docs/nav.md",
     "docs/中国近代史/反右运动.md",
     "docs/中国近代史/大跃进.md",
+    "docs/nav.md",
     "docs/中国近代史/过渡时期总路线.md",
     "docs/读书/冷启动问题.md",
     "docs/杂类/软件.md",
