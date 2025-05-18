@@ -56,12 +56,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/文化大革命.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nav"
+              "title": "文化大革命"
             },
             "group": "ae777cd72465ea30"
           }
@@ -79,13 +79,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/文化大革命.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of nav"
+              "title": "Outline of 文化大革命"
             },
             "group": "ae777cd72465ea30"
           }
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/中国近代史/文化大革命.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for nav"
+              "title": "Backlinks for 文化大革命"
             }
           },
           {
@@ -236,17 +236,17 @@
   },
   "active": "19785442d916ccda",
   "lastOpenFiles": [
-    "docs/读书/芯片战争.md",
-    "docs/nav.md",
-    "docs/中国近代史/文化大革命.md",
     "docs/index.md",
+    "docs/杂类/软件.md",
+    "docs/中国近代史/文化大革命.md",
+    "docs/nav.md",
+    "docs/读书/芯片战争.md",
     "docs/杂类/教程.md",
     "docs/杂类/计算机历史.md",
     "README.md",
     "docs/杂类/高血压.md",
     "docs/中国近代史/大跃进.md",
     "docs/读书/医生回忆录.md",
-    "docs/杂类/软件.md",
     "docs/读书/李飞飞自传.md",
     "docs/中国近代史/反右运动.md",
     "docs/中国近代史/过渡时期总路线.md",
