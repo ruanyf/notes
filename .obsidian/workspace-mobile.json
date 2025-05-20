@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/中国近代史/大跃进.md",
+                "file": "docs/nav.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大跃进"
+              "title": "nav"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/中国近代史/大跃进.md",
+            "file": "docs/nav.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -155,12 +155,15 @@
   },
   "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
-    "docs/读书/李飞飞自传.md",
+    "docs/读书/高斯林口述历史.md",
+    "docs/nav.md",
+    "docs/中国近代史/文化大革命.md",
+    "docs/读书/芯片战争.md",
     "docs/中国近代史/大跃进.md",
+    "docs/读书/李飞飞自传.md",
     "docs/读书/医生回忆录.md",
     "docs/中国近代史/反右运动.md",
     "docs/读书/冷启动问题.md",
-    "docs/nav.md",
     "docs/中国近代史/孙中山的国共合作.md",
     "docs/读书/未来的冲击.md",
     "docs/index.md",
