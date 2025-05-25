@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/读书/施佩尔回忆录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nav"
+              "title": "施佩尔回忆录"
             }
           }
         ]
@@ -155,9 +155,9 @@
   },
   "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
-    "docs/读书/高斯林口述历史.md",
-    "docs/nav.md",
     "docs/中国近代史/文化大革命.md",
+    "docs/nav.md",
+    "docs/读书/高斯林口述历史.md",
     "docs/读书/芯片战争.md",
     "docs/中国近代史/大跃进.md",
     "docs/读书/李飞飞自传.md",
