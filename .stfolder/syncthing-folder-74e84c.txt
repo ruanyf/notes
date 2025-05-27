@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: v3kge-pacfm
+created: 2025-05-26T21:11:22+08:00
