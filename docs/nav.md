@@ -9,6 +9,8 @@
   - [冷启动问题](读书/冷启动问题.md)
 - Cloudflare
   - [wrangler](cloudflare/wrangler.md)
+  - [hono.js](Cloudflare/hono.js.md)
+  - [uppy](Cloudflare/uppy.md)
 - 中国近代史
   - [辛亥革命后的广西](中国近代史/辛亥革命后的广西.md)
   - [北伐战争](中国近代史/北伐战争.md)
