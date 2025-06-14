@@ -56,12 +56,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/nav.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "nav"
             },
             "group": "ae777cd72465ea30"
           }
@@ -79,13 +79,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/nav.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of nav"
             },
             "group": "ae777cd72465ea30"
           }
@@ -236,6 +236,7 @@
   },
   "active": "19785442d916ccda",
   "lastOpenFiles": [
+    "docs/index.md",
     "docs/nav.md",
     "docs/读书/硅谷钢铁侠.md",
     "docs/杂类/软件.md",
@@ -244,7 +245,6 @@
     "docs/读书/施佩尔回忆录.md",
     "docs/JavaScript/package.json.md",
     "docs/JavaScript",
-    "docs/index.md",
     "docs/中国近代史/新冠疫情.md",
     "docs/杂类/财务报表分析.md",
     "docs/读书/王志安.md",
