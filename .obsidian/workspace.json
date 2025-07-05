@@ -56,12 +56,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/杂类/软件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nav"
+              "title": "软件"
             },
             "group": "ae777cd72465ea30"
           }
@@ -79,13 +79,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/nav.md",
+                "file": "docs/杂类/软件.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of nav"
+              "title": "Outline of 软件"
             },
             "group": "ae777cd72465ea30"
           }
@@ -236,10 +236,16 @@
   },
   "active": "19785442d916ccda",
   "lastOpenFiles": [
+    "docs/读书/芯片战争.md",
+    "docs/读书/希特勒女秘书的遗著.md",
+    "docs/读书/摘录.md",
     "docs/index.md",
-    "docs/nav.md",
-    "docs/读书/硅谷钢铁侠.md",
+    "docs/Linux/pacman.md",
+    "docs/杂类/糖尿病.md",
+    "docs/Linux",
     "docs/杂类/软件.md",
+    "docs/读书/硅谷钢铁侠.md",
+    "docs/nav.md",
     "docs/杂类/教程.md",
     "docs/JavaScript/rollup.js.md",
     "docs/读书/施佩尔回忆录.md",
@@ -257,12 +263,7 @@
     "docs/cloudflare/hono.js.md",
     "docs/杂类/软件.sync-conflict-20250526-212033-CMF2PC4.md",
     "docs/中国近代史/文化大革命.md",
-    "docs/读书/芯片战争.md",
     "docs/读书/高斯林口述历史.md",
-    "docs/杂类/计算机历史.md",
-    "README.md",
-    "docs/杂类/高血压.md",
-    "docs/中国近代史/大跃进.md",
     "docs/杂类",
     "docs/cloudflare",
     "Untitled.canvas",

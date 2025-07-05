@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/读书/施佩尔回忆录.md",
+                "file": "docs/读书/希特勒女秘书的遗著.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "施佩尔回忆录"
+              "title": "希特勒女秘书的遗著"
             }
           }
         ]
@@ -155,8 +155,12 @@
   },
   "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
-    "docs/读书/钢铁侠.md",
+    "docs/读书/硅谷钢铁侠.md",
+    "docs/读书/摘录.md",
+    "docs/读书/希特勒女秘书的遗著.md",
+    "docs/读书/冷启动问题.md",
     "docs/读书/施佩尔回忆录.md",
+    "docs/读书/钢铁侠.md",
     "docs/index.md",
     "docs/杂类/财务报表分析.md",
     "docs/杂类/软件.md",
@@ -172,7 +176,6 @@
     "docs/读书/李飞飞自传.md",
     "docs/读书/医生回忆录.md",
     "docs/中国近代史/反右运动.md",
-    "docs/读书/冷启动问题.md",
     "docs/中国近代史/孙中山的国共合作.md",
     "docs/读书/未来的冲击.md",
     "().md",
