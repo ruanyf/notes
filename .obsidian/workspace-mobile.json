@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/读书/摘录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "摘录"
             }
           }
         ]
@@ -155,12 +155,13 @@
   },
   "active": "cadf1f4e7abb35f9",
   "lastOpenFiles": [
+    "docs/杂类/杂记.md",
+    "docs/读书/摘录.md",
+    "docs/index.md",
     "docs/杂类/英语句型.md",
     "docs/杂类/血脂.md",
     "docs/读书/在希特勒身边12年.md",
-    "docs/读书/摘录.md",
     "docs/读书/希特勒女秘书的遗著.md",
-    "docs/index.md",
     "docs/读书/硅谷钢铁侠.md",
     "docs/读书/冷启动问题.md",
     "docs/读书/施佩尔回忆录.md",
@@ -180,7 +181,6 @@
     "docs/读书/医生回忆录.md",
     "docs/中国近代史/反右运动.md",
     "docs/中国近代史/孙中山的国共合作.md",
-    "docs/读书/未来的冲击.md",
     "docs/读书"
   ]
 }
