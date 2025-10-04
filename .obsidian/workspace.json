@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/cloudflare/worker 静态资源.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "worker 静态资源"
+              "title": "index"
             }
           }
         ],
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/cloudflare/worker 静态资源.md",
+                "file": "docs/index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for worker 静态资源"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/cloudflare/worker 静态资源.md",
+                "file": "docs/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of worker 静态资源"
+              "title": "Outline of index"
             }
           }
         ],
@@ -213,23 +213,26 @@
   },
   "active": "26f03fcd9c5fbaf6",
   "lastOpenFiles": [
-    "docs/cloudflare/worker 脚本.md",
-    "docs/cloudflare/worker 静态资源.md",
-    "docs/读书/希特勒的最后14天.md",
-    "docs/读书/摘录.md",
-    "docs/读书/摘录.sync-conflict-20250909-155406-5VKNOCW.md",
+    "README.md",
     "docs/杂类/软件.md",
+    "docs/cloudflare/cloudflare worker handler.md",
+    "docs/读书/摘录.md",
+    "docs/cloudflare/worker ctx 对象.md",
+    "docs/index.md",
+    "docs/读书/希特勒的最后14天.md",
+    "docs/cloudflare/worker 绑定 R2.md",
+    "docs/cloudflare/worker 静态资源.md",
+    "docs/cloudflare/worker 脚本.md",
+    "docs/读书/摘录.sync-conflict-20250909-155406-5VKNOCW.md",
     "docs/JavaScript/rollup.js.md",
     "docs/nav.md",
     "().md",
     "docs/读书/硅谷钢铁侠.md",
     "docs/读书/癌症楼.md",
-    "docs/index.md",
     "Untitled.base",
     "docs/杂类/杂记.md",
     "Untitled 1.base",
     "docs/杂类/英语句型.md",
-    "README.md",
     "docs/杂类/血脂.md",
     "docs/杂类/高血压.md",
     "docs/读书/在希特勒身边12年.md",
@@ -239,10 +242,7 @@
     "docs/杂类/糖尿病.md",
     "docs/Linux",
     "docs/杂类/教程.md",
-    "docs/读书/施佩尔回忆录.md",
-    "docs/JavaScript/package.json.md",
     "docs/JavaScript",
-    "docs/中国近代史/新冠疫情.md",
     "docs/杂类",
     "docs/cloudflare",
     "Untitled.canvas",
