@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/读书/硅谷钢铁侠.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "硅谷钢铁侠"
             }
           }
         ],
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/读书/硅谷钢铁侠.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for 硅谷钢铁侠"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/读书/硅谷钢铁侠.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of 硅谷钢铁侠"
             }
           }
         ],
@@ -213,12 +213,14 @@
   },
   "active": "26f03fcd9c5fbaf6",
   "lastOpenFiles": [
-    "README.md",
+    "docs/读书/Untitled.md",
     "docs/杂类/软件.md",
+    "docs/index.md",
+    "docs/杂类/杂记.md",
+    "README.md",
     "docs/cloudflare/cloudflare worker handler.md",
     "docs/读书/摘录.md",
     "docs/cloudflare/worker ctx 对象.md",
-    "docs/index.md",
     "docs/读书/希特勒的最后14天.md",
     "docs/cloudflare/worker 绑定 R2.md",
     "docs/cloudflare/worker 静态资源.md",
@@ -230,7 +232,6 @@
     "docs/读书/硅谷钢铁侠.md",
     "docs/读书/癌症楼.md",
     "Untitled.base",
-    "docs/杂类/杂记.md",
     "Untitled 1.base",
     "docs/杂类/英语句型.md",
     "docs/杂类/血脂.md",
@@ -241,7 +242,6 @@
     "docs/Linux/pacman.md",
     "docs/杂类/糖尿病.md",
     "docs/Linux",
-    "docs/杂类/教程.md",
     "docs/JavaScript",
     "docs/杂类",
     "docs/cloudflare",
