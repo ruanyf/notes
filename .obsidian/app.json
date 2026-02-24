@@ -1,4 +1,5 @@
 {
   "promptDelete": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "tabSize": 2
 }
