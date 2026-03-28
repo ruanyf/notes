@@ -49,6 +49,10 @@ Created your new D1 database.
 
 绑定可以在 worker 中以 `env.<BINDING_NAME>` 访问。
 
+默认情况下，数据库会在最接近创建命令发出的区域创建。不过，如果你是在英国开发应用，但面向美国市场，这种情况下，你可能希望数据库位于美国。
+
+创建数据库时，你可以将 –location=wnam 传递给命令，以更改领导者所在的位置。目前可选的地点有 wnam（西北美洲）、enam（北美东部）、weur（西欧）、eeur（东欧）和 apac（亚太地区）。
+
 命令行运行本地的 SQL 语句文件
 
 ```bash
@@ -61,6 +65,165 @@ $ npx wrangler d1 execute prod-d1-tutorial --local --file=./schema.sql
 $ npx wrangler d1 execute prod-d1-tutorial --local --command="SELECT * FROM Customers"
 ```
 
+## 数据库结构修改
+
+创建一个数据库结构修改（MIGRATION）。
+
+```bash
+$ npx wrangler d1 migrations create <DATABASE_NAME> <MIGRATION_NAME>
+```
+
+这会在项目根目录创建一个名为 migrations 的新文件夹。你需要用你创建数据库时用的数据库名称替换 <DATABASE_NAME>，并给数据库结构修改一个描述性名称。所有 migration 都会按时间顺序存储在 migrations 文件夹中，因此描述性名称有助于识别结构修改的目标。
+
+上面这条命令会在 migrations 目录里创建一个结构修改脚本，里面可以写入 SQL 语句。
+
+执行数据库结构修改。
+
+```bash
+## 本地修改
+$​ npx wrangler d1 migrations apply photo-service --local
+
+## 远程生产环境修改
+$​ npx wrangler d1 migrations apply photo-service --remote
+```
+
+## Worker 执行 SQL 语句
+
+```javascript
+​**try**​ {​  results = ​**await**​ env.DB.prepare(​_`_
+​​ ​ _SELECT i.*, c.display_name AS category_display_name_​​
+ ​ _FROM images i_
+ ​​ ​ _INNER JOIN image_categories c ON i.category_id = c.id_​
+ ​ ​ _ORDER BY created_at DESC_​​ ​ _LIMIT ?1`_
+ ​​  )
+ ​  .bind(limit)
+ ​  .all()​
+   } ​**catch**​ (e) {
+   ​  ​**let**​ message;
+   ​  ​**if**​ (e ​**instanceof**​ Error) message = e.message;​
+    ​  console.log({​  message: message​  });
+    
+    ​**return**​ ​**new**​ Response(​_'Error'_​, { status: 500 })
+}
+```
+
+.prepare() 方法用来准备 SQL 语句。
+.all() 方法表示执行 .prepare() 返回的语句，返回所有的查询结果。.all() 方法的返回格式如下。
+
+```javascript
+{
+	results: array | null, // [] if empty, or null if it doesn't apply
+	success: boolean, // true if the operation was successful, false otherwise
+	meta: {
+		duration: number, // duration of the operation in milliseconds
+	}
+}
+```
+
+.first() 返回第一个结果
+
+```javascript
+try {
+  result = await env.DB.prepare(`
+		SELECT i.*, c.display_name AS category_display_name
+		FROM images i
+		INNER JOIN image_categories c ON i.category_id = c.id
+		WHERE i.id = ?1`
+	)
+	.bind(request.params.id)
+	.first()
+} catch (e) {
+	let message;
+	if (e instanceof Error) message = e.message;
+	console.log({
+		message: message
+	});
+	return new Response('Error', { status: 500 })
+}
+```
+
+如果列名作为 .first() 的参数，将直接返回该列的值。
+
+```javascript
+const stmt = db.prepare('SELECT COUNT(1) as img_count FROM images');
+const total = await stmt.first('img_count');
+// Outputs 5
+console.log(total);
+
+const stmt = db.prepare('SELECT image_url, title FROM images');
+const total = await stmt.first();
+// outputs {image_url: 'http://www.example.com/foo.png', title: 'Some Title'}
+console.log(total);
+
+```
+
+插入数据
+
+```javascript
+try {
+result = await env.DB.prepare(`
+INSERT INTO images
+(category_id, user_id, image_url, title,
+format, resolution, file_size_bytes)
+VALUES
+(?1, ?2, ?3, ?4, ?5, ?6, ?7)`
+)
+.bind(
+json.category_id,
+json.user_id,
+json.image_url,
+json.title,
+json.format,
+json.resolution,
+json.file_size_bytes
+)
+.run()
+} catch (e) {
+let message;
+if (e instanceof Error) message = e.message;
+}
+console.log({
+message: message
+});
+
+```
+
+.run() 方法执行 SQL 语句。
+
+如果插入语句，需要返回插入的 ID。
+
+```javascript
+result = await env.DB.prepare(`
+INSERT INTO images
+(category_id, user_id, image_url, title, format, resolution, file_size_bytes)
+VALUES
+(?1, ?2, ?3, ?4, ?5, ?6, ?7)
+RETURNING *;`
+)
+.bind(
+json.category_id,
+json.user_id,
+json.image_url,
+json.title,
+json.format,
+json.resolution,
+json.file_size_bytes
+)
+.first()
+```
+
+返回执行结果。
+
+```javascript
+response that is returned like so:
+return new Response(
+JSON.stringify(result),
+{
+status: 201,
+headers: { 'Content-type': 'application/json' }
+}
+);
+```
 ## SQL 数据库操作
 
 创建表格

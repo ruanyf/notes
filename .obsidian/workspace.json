@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/cloudflare/Cloudflare D1.md",
+                "file": "docs/cloudflare/wrangler.toml.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cloudflare D1"
+              "title": "wrangler.toml"
             }
           }
         ],
@@ -198,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/cloudflare/Cloudflare D1.md",
+                "file": "docs/cloudflare/wrangler.toml.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Cloudflare D1 的大纲"
+              "title": "wrangler.toml 的大纲"
             }
           }
         ],
@@ -225,21 +225,30 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f3dd6decba6cc820",
+  "active": "844cdcb21a0cdb38",
   "lastOpenFiles": [
-    "docs/cloudflare/worker 静态资源.md",
-    "docs/cloudflare/Cloudflare D1.md",
     "docs/cloudflare/worker 脚本.md",
+    "docs/cloudflare/wrangler.toml.md",
+    "docs/cloudflare/wrangler.md",
+    "docs/Linux/命令行操作.md",
+    "docs/cloudflare/Cloudflare D1.md",
+    "docs/cloudflare/worker 绑定 R2.md",
+    "docs/cloudflare/cloudflare worker handler.md",
+    "docs/杂类/现金流量表.md",
+    "docs/杂类/软件.md",
+    "docs/杂类/资产负债表.md",
+    "docs/读书/希特勒传.md",
+    "docs/杂类/网道.md",
+    "().md",
+    "docs/杂类/冯至《南方的夜》.md",
+    "docs/cloudflare/worker 静态资源.md",
     "docs/互联网开发/Web 组件.md",
     "docs/杂类/家庭用药.md",
     "docs/互联网开发",
-    "docs/杂类/网道.md",
     "docs/杂类/血脂.md",
-    "docs/cloudflare/worker 绑定 R2.md",
     "docs/HTTP/cache.md",
     "docs/Linux/pacman.md",
     "docs/HTTP",
-    "docs/杂类/软件.md",
     "docs/杂类/教程.md",
     "docs/杂类/杂记.md",
     "docs/读书/摘录.md",
@@ -247,18 +256,9 @@
     "docs/中国近代史/辛亥革命/北洋军阀.md",
     "docs/中国近代史/辛亥革命",
     "docs/杂类/英语句型.md",
-    "docs/杂类/糖尿病.md",
-    "docs/杂类/计算机历史.md",
     "Untitled 2.base",
-    "docs/nav.md",
-    "docs/index.md",
     "Untitled.base",
     "Untitled 1.base",
-    "README.md",
-    "docs/cloudflare/GitHub OAuth.md",
-    "docs/读书/未来的冲击.md",
-    "docs/读书/癌症楼.md",
-    "docs/读书/硅谷钢铁侠.md",
     "docs/Linux",
     "docs/JavaScript",
     "docs/杂类",

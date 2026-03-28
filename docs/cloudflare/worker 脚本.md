@@ -94,11 +94,31 @@ Cloudflare 提供一个[在线练习场](https://workers.cloudflare.com/playgrou
 定时任务需要在入口脚本里面设置`scheduled`事件的监听函数。
 
 ```javascript
+// 例一
 export default {
   async scheduled(controller, env, ctx) {
       console.log("cron processed");
   },
 };
+
+// 例二
+export default {
+  async scheduled(
+    event: ScheduledController,
+    env: Env,
+    ctx: ExecutionContext
+  ) {
+		switch (event.cron) {
+			// You can set up to three schedules maximum.
+			case "*/15 * * * *":
+				console.log("This will be executed every 15 minutes");
+				break;
+			case "*/30 * * * *":
+				console.log("This will be executed every 30 minutes");
+				break;
+		}
+	}
+}
 ```
 
 然后，在 wrangler 配置文件里面设置触发器。
@@ -250,6 +270,42 @@ export default {
 
 - `CTX.props` 当你的 worker 被另一个 worker 调用时，`ctx.props` 可以提供该 worker 的信息。
 - CTX.exports 提供当前脚本顶层 exports 的输出接口。
+
+## wrangler.toml
+
+wrangler.toml 是 wrangler 的配置文件，有以下字段。
+
+- name：worker 名称，用于你的预览网址，不能有空格，但可以用连字符。
+- main：worker 的入口文件，worker 收到请求时，会执行该文件。
+- compatibility_date：使用哪个版本的 Worker 运行时。Cloudflare 建议定期更新这个日期​。
+- compatibility_flags：允许用户调整运行环境。
+
+## 部署脚本
+
+部署脚本的命令
+
+```bash
+$ npm run deploy
+```
+
+背后的命令是 wrangler deploy。
+
+## 测试运行
+
+本地运行的命令
+
+```bash
+$ npm run dev
+```
+
+它背后运行的是 wrangler dev。
+
+远程运行的命令
+
+```bash
+$ npm run dev -- --remote
+```
+
 ## 秘密变量
 
 秘密变量可以放入 `.dev.vars` 文件或 `.env` 文件，与 Wrangler 配置文件同一个目录中。
@@ -275,6 +331,16 @@ wrangler secret put SECRET_NAME
 const secretValue = env.SECRET_NAME;
 ```
 
+如果不是秘密变量，而是环境变量，可以写在 wrangler.toml 里面。
+
+.dev.vars 的写法如下。
+
+```markdown
+​[vars]
+API_HOST = ​"example.com"
+```
+
+上面的环境变量，就可以通过 env.API_HOST 调用。
 ## 全局对象
 
 worker 脚本可以直接使用、不必 import 的全局对象
