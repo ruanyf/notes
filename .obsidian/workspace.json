@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/cloudflare/wrangler.toml.md",
+                "file": "docs/cloudflare/Cloudflare D1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wrangler.toml"
+              "title": "Cloudflare D1"
             }
           }
         ],
@@ -198,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/cloudflare/wrangler.toml.md",
+                "file": "docs/cloudflare/Cloudflare D1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "wrangler.toml 的大纲"
+              "title": "Cloudflare D1 的大纲"
             }
           }
         ],
@@ -227,11 +227,12 @@
   },
   "active": "844cdcb21a0cdb38",
   "lastOpenFiles": [
-    "docs/cloudflare/worker 脚本.md",
-    "docs/cloudflare/wrangler.toml.md",
-    "docs/cloudflare/wrangler.md",
-    "docs/Linux/命令行操作.md",
+    "docs/cloudflare/SQLite.md",
     "docs/cloudflare/Cloudflare D1.md",
+    "docs/cloudflare/wrangler 命令.md",
+    "docs/cloudflare/wrangler.toml.md",
+    "docs/cloudflare/worker 脚本.md",
+    "docs/Linux/命令行操作.md",
     "docs/cloudflare/worker 绑定 R2.md",
     "docs/cloudflare/cloudflare worker handler.md",
     "docs/杂类/现金流量表.md",
@@ -255,7 +256,6 @@
     "docs/中国近代史/八六学潮.md",
     "docs/中国近代史/辛亥革命/北洋军阀.md",
     "docs/中国近代史/辛亥革命",
-    "docs/杂类/英语句型.md",
     "Untitled 2.base",
     "Untitled.base",
     "Untitled 1.base",

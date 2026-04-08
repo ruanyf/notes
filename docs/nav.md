@@ -12,7 +12,7 @@
 - JavaScript
    - [rollup.js](JavaScript/rollup.js.md)
 - Cloudflare
-  - [wrangler](cloudflare/wrangler.md)
+  - [wrangler 命令](wrangler%20命令.md)
   - [hono.js](Cloudflare/hono.js.md)
   - [uppy](Cloudflare/uppy.md)
 - 中国近代史

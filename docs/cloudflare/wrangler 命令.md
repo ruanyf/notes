@@ -1,4 +1,4 @@
-# Wrangler
+# Wrangler 命令
 
 wrangler 是 Cloudflare 开发者平台的命令行开发工具，允许你在命令行调用 Cloudflare 的各种功能。
 
@@ -32,4 +32,24 @@ $ npx wrangler -v
 
 ```bash
 $ npm install wrangler@latest
+```
+
+## 基本操作
+
+本地开发
+
+```bash
+$ npx wrangler dev
+```
+
+远程部署
+
+```bash
+$ npx wrangler deploy
+```
+
+删除 worker
+
+```bash
+$ npx wrangler delete d1-tutorial
 ```
