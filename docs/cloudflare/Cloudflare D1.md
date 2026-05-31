@@ -173,7 +173,7 @@ $​ npx wrangler d1 migrations apply photo-service --remote
 
 ## Worker 执行 SQL 语句
 
-Worker 连接数据库
+Worker 连接数据库，并执行查询。
 
 ```javascript
 export default {
@@ -199,6 +199,23 @@ export default {
 - prepare() ：SQL 语句准备，语句中带有占位符
 - bind()：数值绑定占位符
 - run()：运行查询，返回所有行，如果查询不到任何行结果，返回 none
+
+带有错误捕捉的例子。
+	
+```javascript
+const userId = c.req.param("id");
+
+try {
+	let { results } = await c.env.DB.prepare(
+		"SELECT * FROM users WHERE user_id = ?",
+	)
+	.bind(userId)
+	.run();
+	return c.json(results);
+} catch (e) {
+	return c.json({ err: "Failed to query user" }, 500);
+}
+```
 
 下面是另一个例子。
 
@@ -373,6 +390,114 @@ const { results } = await env.DB.prepare(
   .run();
 console.log("results: ", results);
 ```
+
+## 错误处理
+
+[`stmt.`](https://developers.cloudflare.com/d1/worker-api/prepared-statements/) and [`db.`](https://developers.cloudflare.com/d1/worker-api/d1-database/) 类方法都会抛错。
+
+```javascript
+try {
+  // This is an intentional misspelling
+  await db.exec("INSERTZ INTO my_table (name, employees) VALUES ()");
+} catch (e: any) {
+  console.error({
+    message: e.message
+  });
+}
+
+// 抛出的错误
+{
+  "message": "D1_EXEC_ERROR: Error in line 1: INSERTZ INTO my_table (name, employees) VALUES (): sql error: near \"INSERTZ\": syntax error in INSERTZ INTO my_table (name, employees) VALUES () at offset 0"
+}
+```
+
+## Migration（迁移）
+
+数据库迁移是一种对数据库进行版本控制的方法。每次迁移都会以 `.sql` 文件的形式存储在 `migrations` 文件夹中。
+
+`migrations` 文件夹中的每个迁移文件，其文件名中都包含指定的版本号。文件按顺序排列。每个迁移文件都是一个 SQL 文件。
+
+默认情况下，迁移文件会创建在 Worker 项目目录下的 `migrations/` 文件夹中。创建迁移文件后，已应用的迁移记录会保存在数据库的 `d1_migrations` 表中。你可以在 Wrangler 文件中的 D1 绑定内自定义此位置和表名称。
+
+```toml
+[[d1_databases]]
+binding = "<BINDING_NAME>"
+database_name = "<DATABASE_NAME>"
+database_id = "<UUID>"
+preview_database_id = "<UUID>"
+migrations_table = "<d1_migrations>"
+migrations_dir = "<FOLDER_NAME>"
+```
+
+应用迁移时，您可能需要暂时禁用[外键约束](https://developers.cloudflare.com/d1/sql-api/foreign-keys/) 。为此，请在进行任何会违反外键约束的更改之前，调用 `PRAGMA defer_foreign_keys = true` 。
+
+### 操作步骤
+
+新建空数据库后，新建 migration。
+
+```bash
+$ npx wrangler d1 migrations create DB initial_schema
+```
+
+执行这个命令后，默认会在 migrations 目录下新建 文件 0001_initial_schema.sql 。编辑这个文件，写入创建表的 SQL 语句。
+
+使用下面的命令应用 migration。
+
+```bash
+$ npx wrangler d1 migrations apply DB --local
+```
+
+`--local`标志表示使用本地数据库。
+
+### 命令
+
+（1）`d1 migrations create`
+
+新建新的 migration。
+
+这个命令会在 migrations 目录里面生成一个带版本的文件，可以为它起一个描述性的文件名，比如 `0000_create_user_table.sql`，它会带有版本号和你指定的描述性名字。
+
+```bash
+$ npx wrangler d1 migrations create [DATABASE] [MESSAGE]
+```
+- DATABASE：数据库名字
+- MASSAGE：本次操作的描述性文字
+
+（2） `d1 migrations list`
+
+列出未应用的 migration。
+
+```bash
+$ npx wrangler d1 migrations list [DATABASE]
+```
+
+参数：
+
+- [数据库] 字符串（必填）：数据库的名称或绑定    
+- `--local` `boolean`：检查迁移是否已针对本地数据库进行配置，以便与 Wrangler 开发工具一起使用。   
+- `--remote` `boolean`：使用 wrangler dev --remote 命令检查针对远程数据库的迁移。  
+- --preview 布尔值 默认值：false：检查针对预览版 D1 数据库的迁移
+- `--persist-to` `string`：指定用于本地持久化的目录（必须使用 --local 标志）
+
+（3） `d1 migrations apply`
+
+应用所有未应用的 migration。
+
+此命令将提示您确认即将执行的迁移。请确认是否继续。执行完成后，系统将创建备份。在 CI/CD 环境或其他非交互式命令行中运行 apply 命令时，将跳过确认步骤，但仍会创建备份。
+
+如果应用迁移导致错误，则该迁移将被回滚，并且先前成功的迁移将保持有效。
+
+```bash
+$ npx wrangler d1 migrations apply [DATABASE]
+```
+
+参数
+
+- [数据库] 字符串（必填）：数据库的名称或绑定  
+- `--local` `boolean`：针对本地数据库执行命令/文件，以便与 Wrangler 开发版一起使用。    
+- `--remote` `boolean`：针对远程数据库执行命令/文件，以便与 wrangler dev --remote 一起使用    
+- --preview 布尔值 默认值：false：对预览版 D1 数据库执行命令/文件    
+- `--persist-to` `string`：指定用于本地持久化的目录（必须使用 --local 标志）
 
 ## API
 
@@ -677,6 +802,22 @@ JSON 函数如下。
 SELECT json_extract('not valid JSON: just a string', '$')
 // ERROR 9015: SQL engine error: query error: Error code 1: SQL error or missing database (malformed JSON)`
 ```
+
+## Wrangler 命令
+
+- `d1 create`：创建数据库
+- `d1 info`：查询数据库信息
+- `d1 list`：列出当前用户的所有数据库
+- `d1 delete`：删除一个数据库
+- `d1 execute`：执行一个命令或 SQL 语句
+- `d1 export`：输出数据库内容或结构
+- `d1 time-travel info`：获取某个特定时点的数据库信息。
+- `d1 time-travel restore`：将数据库恢复到某个特定时点。
+- `d1 migrations create`：生成一个新的 migration
+- `d1 migrations list`：列出没有应用的 migration 文件
+- `d1 migrations apply`：实施没有应用的 migration 文件
+-  `d1 insights`：获取数据库查询的运行信息
+- 
 
 ## SQL 数据库操作
 
