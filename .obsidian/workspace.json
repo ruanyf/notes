@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/杂类/软件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "软件"
             }
           }
         ],
@@ -112,7 +112,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -212,13 +214,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
-                "followCursor": false,
+                "file": "docs/杂类/软件.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -241,8 +243,14 @@
   },
   "active": "04c7e0eecc6873bf",
   "lastOpenFiles": [
-    "docs/读书/014.查理·芒格传.md",
+    "docs/index.md",
+    "docs/HTTP/Vary 字段.md",
+    "docs/HTTP/cache.md",
+    "docs/读书/015.林白《亚热带公园》.md",
+    "docs/杂类/软件.md",
+    "docs/杂类/教程.md",
     "docs/nav.md",
+    "docs/读书/014.查理·芒格传.md",
     "docs/cloudflare/wrangler 命令.md",
     "docs/读书/摘录.md",
     "docs/读书/013.在希特勒身边12年.md",
@@ -258,15 +266,9 @@
     "docs/读书/003.冷启动问题.md",
     "docs/读书/002.硅谷钢铁侠.md",
     "docs/读书/001.癌症楼.md",
-    "docs/index.md",
     "docs/读书/高斯林口述历史.md",
     "docs/cloudflare/Cloudflare D1.md",
     "README.md",
-    "().md",
-    "docs/杂类/杂记.md",
-    "docs/杂类/网道.md",
-    "docs/HTTP/cache.md",
-    "docs/互联网开发/Web 组件.md",
     "docs/互联网开发",
     "docs/HTTP",
     "docs/中国近代史/辛亥革命",
